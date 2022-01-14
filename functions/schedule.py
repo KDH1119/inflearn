@@ -16,14 +16,14 @@ def kakaotalk_me():
     }
 
     now = datetime.now()
-    now_re = str(now.year) + '년 ' + str(now.month) + '월 ' + \
-        str(now.day) + '일 ' + str(now.hour) + "시 " + str(now.minute) + "분 "
+    now_re = str(now.month) + '월 ' + \
+        str(now.day) + '일 ' + str(now.hour) + "시 " + str(now.minute) + "분 입니다."
 
     print(now_re)
 
     template = {
         "object_type": "text",
-        "text": "현재 시각: " + now_re,
+        "text": now_re,
         "link": {
             "web_url": "www.naver.com",
         },

@@ -1,0 +1,57 @@
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 150%;
+  margin: 12px 12px;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+  background-color: darkgreen;
+  font-size: 150%;
+  text-align: center;
+  width: 100%;
+  height: 3%;
+  margin: 0 0;
+}
+
+nav a {
+  position: relative;
+  top: 20%;
+  opacity: 0.8;
+  color: white;
+  margin: 8px 24px;
+}
+
+nav a:hover {
+  color: indianred;
+  transform: scale(1.2);
+  opacity: 1;
+  transition: all 350ms ease-in;
+}
+
+section {
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+section button {
+  width: 120px;
+  height: 40px;
+  background-color: beige;
+  min-height: 100%;
+  font-size: 100%;
+}
+
+section label {
+  margin: 8px 24px;
+  font-size: 150%;
+}

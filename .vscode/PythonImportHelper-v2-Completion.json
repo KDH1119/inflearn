@@ -1,0 +1,240 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "importPath": "atexit",
+        "description": "atexit",
+        "isExtraImport": true,
+        "detail": "atexit",
+        "documentation": {}
+    },
+    {
+        "label": "init",
+        "importPath": "mimetypes",
+        "description": "mimetypes",
+        "isExtraImport": true,
+        "detail": "mimetypes",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "url = 'https://kauth.kakao.com/oauth/token'\nrest_api_key = '35ea63b0ed1e8e8bc29bacf9a9ccfe14'\nredirect_uri = 'https://naver.com'\nauthorize_code = 'DfUXakhpViYoLPWnxY0ciB45AHW3nshi0KKxY_E5Jkm2PsYzScQ1Cnt10sNLgCBmRBvt5Ao9dNsAAAF-T4xR6w'\ndata = {\n    'grant_type': 'authorization_code',\n    'client_id': rest_api_key,\n    'redirect_uri': redirect_uri,\n    'code': authorize_code,\n}",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "rest_api_key",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "rest_api_key = '35ea63b0ed1e8e8bc29bacf9a9ccfe14'\nredirect_uri = 'https://naver.com'\nauthorize_code = 'DfUXakhpViYoLPWnxY0ciB45AHW3nshi0KKxY_E5Jkm2PsYzScQ1Cnt10sNLgCBmRBvt5Ao9dNsAAAF-T4xR6w'\ndata = {\n    'grant_type': 'authorization_code',\n    'client_id': rest_api_key,\n    'redirect_uri': redirect_uri,\n    'code': authorize_code,\n}\nresponse = requests.post(url, data=data)",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "redirect_uri",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "redirect_uri = 'https://naver.com'\nauthorize_code = 'DfUXakhpViYoLPWnxY0ciB45AHW3nshi0KKxY_E5Jkm2PsYzScQ1Cnt10sNLgCBmRBvt5Ao9dNsAAAF-T4xR6w'\ndata = {\n    'grant_type': 'authorization_code',\n    'client_id': rest_api_key,\n    'redirect_uri': redirect_uri,\n    'code': authorize_code,\n}\nresponse = requests.post(url, data=data)\ntokens = response.json()",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "authorize_code",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "authorize_code = 'DfUXakhpViYoLPWnxY0ciB45AHW3nshi0KKxY_E5Jkm2PsYzScQ1Cnt10sNLgCBmRBvt5Ao9dNsAAAF-T4xR6w'\ndata = {\n    'grant_type': 'authorization_code',\n    'client_id': rest_api_key,\n    'redirect_uri': redirect_uri,\n    'code': authorize_code,\n}\nresponse = requests.post(url, data=data)\ntokens = response.json()\nprint(tokens)",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "data = {\n    'grant_type': 'authorization_code',\n    'client_id': rest_api_key,\n    'redirect_uri': redirect_uri,\n    'code': authorize_code,\n}\nresponse = requests.post(url, data=data)\ntokens = response.json()\nprint(tokens)\n# json 저장",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "response = requests.post(url, data=data)\ntokens = response.json()\nprint(tokens)\n# json 저장\nwith open(\"kakao_code.json\", \"w\") as fp:\n    json.dump(tokens, fp)",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "tokens",
+        "kind": 5,
+        "importPath": "functions.Get_KaKao_API",
+        "description": "functions.Get_KaKao_API",
+        "peekOfCode": "tokens = response.json()\nprint(tokens)\n# json 저장\nwith open(\"kakao_code.json\", \"w\") as fp:\n    json.dump(tokens, fp)",
+        "detail": "functions.Get_KaKao_API",
+        "documentation": {}
+    },
+    {
+        "label": "kakaotalk_me",
+        "kind": 2,
+        "importPath": "functions.schedule",
+        "description": "functions.schedule",
+        "peekOfCode": "def kakaotalk_me():\n    with open(\"kakao_code.json\", \"r\") as fp:\n        tokens = json.load(fp)\n    url = \"https://kapi.kakao.com/v2/api/talk/memo/default/send\"\n    headers = {\n        \"Authorization\": \"Bearer \" + tokens[\"access_token\"]\n    }\n    now = datetime.now()\n    now_re = str(now.month) + '월 ' + \\\n        str(now.day) + '일 ' + str(now.hour) + \"시 \" + str(now.minute) + \"분 입니다.\"",
+        "detail": "functions.schedule",
+        "documentation": {}
+    },
+    {
+        "label": "getLatLng",
+        "kind": 2,
+        "importPath": "functions.SearchMap",
+        "description": "functions.SearchMap",
+        "peekOfCode": "def getLatLng(address=\"대구 수성구 범어동 665-1\"):\n    result = \"\"\n    url = 'https://dapi.kakao.com/v2/local/search/address.json?query=' + address\n    rest_api_key = '35ea63b0ed1e8e8bc29bacf9a9ccfe14'\n    header = {'Authorization': 'KakaoAK ' + rest_api_key}\n    r = requests.get(url, headers=header)\n    if r.status_code == 200:\n        result_address = r.json()[\"documents\"][0][\"address\"]\n        result = result_address[\"y\"], result_address[\"x\"]\n    else:",
+        "detail": "functions.SearchMap",
+        "documentation": {}
+    },
+    {
+        "label": "getKakaoMapHtml",
+        "kind": 2,
+        "importPath": "functions.SearchMap",
+        "description": "functions.SearchMap",
+        "peekOfCode": "def getKakaoMapHtml(address_latlng):\n    javascript_key = \"855cb9d4708241fab2dd03643adf7c92\"\n    result = \"\"\n    result = result + \\\n        \"<div id='map' style='width:300px;height:200px;display:inline-block;'></div>\" + \"\\n\"\n    result = result + \"<script type='text/javascript' src='//dapi.kakao.com/v2/maps/sdk.js?appkey=\" + \\\n        javascript_key + \"'></script>\" + \"\\n\"\n    result = result + \"<script>\" + \"\\n\"\n    result = result + \\\n        \"    var container = document.getElementById('map'); \" + \"\\n\"",
+        "detail": "functions.SearchMap",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "functions.Send_KaKao_Message",
+        "description": "functions.Send_KaKao_Message",
+        "peekOfCode": "url = \"https://kapi.kakao.com/v2/api/talk/memo/default/send\"\n# kapi.kakao.com/v2/api/talk/memo/default/send\nheaders = {\n    \"Authorization\": \"Bearer \" + tokens[\"access_token\"]\n}\ntemplate = {\n    \"object_type\": \"list\",\n    \"header_title\": \"초밥 사진\",\n    \"header_link\": {\n        \"web_url\": \"www.naver.com\",",
+        "detail": "functions.Send_KaKao_Message",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": "functions.Send_KaKao_Message",
+        "description": "functions.Send_KaKao_Message",
+        "peekOfCode": "headers = {\n    \"Authorization\": \"Bearer \" + tokens[\"access_token\"]\n}\ntemplate = {\n    \"object_type\": \"list\",\n    \"header_title\": \"초밥 사진\",\n    \"header_link\": {\n        \"web_url\": \"www.naver.com\",\n        \"mobile_web_url\": \"www.naver.com\",\n        \"android_execution_params\": \"contentId=100\",",
+        "detail": "functions.Send_KaKao_Message",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "kind": 5,
+        "importPath": "functions.Send_KaKao_Message",
+        "description": "functions.Send_KaKao_Message",
+        "peekOfCode": "template = {\n    \"object_type\": \"list\",\n    \"header_title\": \"초밥 사진\",\n    \"header_link\": {\n        \"web_url\": \"www.naver.com\",\n        \"mobile_web_url\": \"www.naver.com\",\n        \"android_execution_params\": \"contentId=100\",\n        \"ios_execution_params\": \"contentId=100&buy=true\"\n    },\n    \"contents\": [",
+        "detail": "functions.Send_KaKao_Message",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "functions.Send_KaKao_Message",
+        "description": "functions.Send_KaKao_Message",
+        "peekOfCode": "data = {\n    \"template_object\": json.dumps(template)\n}\nresponse = requests.post(url, headers=headers, data=data)\nprint(response.status_code)\nif response.json().get('result_code') == 0:\n    print('메시지를 성공적으로 보냈습니다.')\nelse:\n    print('메시지를 성공적으로 보내지 못했습니다. 오류메시지 : ' + str(response.json()))",
+        "detail": "functions.Send_KaKao_Message",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "functions.Send_KaKao_Message",
+        "description": "functions.Send_KaKao_Message",
+        "peekOfCode": "response = requests.post(url, headers=headers, data=data)\nprint(response.status_code)\nif response.json().get('result_code') == 0:\n    print('메시지를 성공적으로 보냈습니다.')\nelse:\n    print('메시지를 성공적으로 보내지 못했습니다. 오류메시지 : ' + str(response.json()))",
+        "detail": "functions.Send_KaKao_Message",
+        "documentation": {}
+    },
+    {
+        "label": "main_view",
+        "kind": 2,
+        "importPath": "templatetags.COVID-19",
+        "description": "templatetags.COVID-19",
+        "peekOfCode": "def main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
+        "detail": "templatetags.COVID-19",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "templatetags.COVID-19",
+        "description": "templatetags.COVID-19",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag\ndef main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
+        "detail": "templatetags.COVID-19",
+        "documentation": {}
+    }
+]
