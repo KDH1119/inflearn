@@ -1,49 +1,5 @@
 [
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "schedule",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "schedule",
-        "description": "schedule",
-        "detail": "schedule",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "register",
         "importPath": "atexit",
         "description": "atexit",
@@ -82,6 +38,68 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "main_view",
+        "kind": 2,
+        "importPath": "functions.COVID-19",
+        "description": "functions.COVID-19",
+        "peekOfCode": "def main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
+        "detail": "functions.COVID-19",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "functions.COVID-19",
+        "description": "functions.COVID-19",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag\ndef main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
+        "detail": "functions.COVID-19",
         "documentation": {}
     },
     {
@@ -217,24 +235,6 @@
         "description": "functions.Send_KaKao_Message",
         "peekOfCode": "response = requests.post(url, headers=headers, data=data)\nprint(response.status_code)\nif response.json().get('result_code') == 0:\n    print('메시지를 성공적으로 보냈습니다.')\nelse:\n    print('메시지를 성공적으로 보내지 못했습니다. 오류메시지 : ' + str(response.json()))",
         "detail": "functions.Send_KaKao_Message",
-        "documentation": {}
-    },
-    {
-        "label": "main_view",
-        "kind": 2,
-        "importPath": "templatetags.COVID-19",
-        "description": "templatetags.COVID-19",
-        "peekOfCode": "def main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
-        "detail": "templatetags.COVID-19",
-        "documentation": {}
-    },
-    {
-        "label": "register",
-        "kind": 5,
-        "importPath": "templatetags.COVID-19",
-        "description": "templatetags.COVID-19",
-        "peekOfCode": "register = template.Library()\n@register.simple_tag\ndef main_view(request):\n    rest_api_key = \"pvkyxw51gJFXcqPCn8Gjb9ZHKeVSz72Ii\"\n    url = \"https://api.corona-19.kr/korea/?serviceKey=\" + rest_api_key\n    request = requests.get(url).text\n    context = json.loads(request)\n    context = {'df': context.to_html(justify='center')}\n    return render(request, 'graph.html', context)",
-        "detail": "templatetags.COVID-19",
         "documentation": {}
     }
 ]
