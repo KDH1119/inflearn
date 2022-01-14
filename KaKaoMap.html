@@ -1,27 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaKaoMap</title>
+    <title>KDH's Website</title>
+    <link rel="stylesheet" type="text/css" src="./practice.css">
+    <script type="text/javascript" src="functions/add_two_numbers.js"></script>
+    <script type="text/javascript" src="functions/what_time_is_it.js"></script>
+    <script type="text/javascript" src="functions/clock.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script type="text/javascript" href="./function_keywordMap.js"></script>
 </head>
 <body>
-    <div id="map" style="width:500px; height:400px;"></div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=855cb9d4708241fab2dd03643adf7c92"></script>
-    <script type="text/javascript">
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(35.85520833, 128.6328667), //지도의 중심좌표.
-            level: 5 //지도의 레벨(확대, 축소 정도)
-        };
+    <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <div class="container text-white">   
+            <a class="navbar-brand text-white" href="./index.html">Do It Django</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./about_me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./KaKaoMap.html">KaKaoMap</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <a class="nav-link text-white" href="#">Log In</a>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col my-2">
+            <div id="map" style="width:500px; height:400px;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=855cb9d4708241fab2dd03643adf7c92"></script>
+            <script type="text/javascript">
+                var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+                var options = { //지도를 생성할 때 필요한 기본 옵션
+                    center: new kakao.maps.LatLng(35.85520833, 128.6328667), //지도의 중심좌표.
+                    level: 5 //지도의 레벨(확대, 축소 정도)
+                };
 
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-    </script>
-    <hr>
-    <input id="inputkeyword" value="keyword" type="text">
-    <button onclick="keywordMap()">지도 검색</button>
-    <hr>
+                var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+            </script>
+            <hr>
+            <input id="inputkeyword" value="keyword" type="text">
+            <button onclick="keywordMap()">지도 검색</button>
+            <hr>
+        </div>
+    </div>
 </body>
 </html>
