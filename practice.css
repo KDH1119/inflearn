@@ -1,7 +1,8 @@
-.clock {
-  margin: 12px 0;
-}
-
-.inputbox {
-  margin: 12px 12px;
+.timebtn {
+  width: 120px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: darkcyan;
+  border-color: darkcyan;
+  color: aliceblue;
 }
